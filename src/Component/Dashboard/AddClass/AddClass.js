@@ -44,8 +44,8 @@ const AddClass = () => {
     }
 
     return (
-        <section className="container-fluid row " >
-        <div className="col-md-2">
+        <section className="container-fluid row mx-0 px-0" >
+        <div className="col-md-2 px-0">
             <Sidebar></Sidebar>
         </div>
         <div className="col-md-10 p-5 pr-5 bg-warning ">
