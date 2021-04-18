@@ -1,0 +1,32 @@
+.contact{
+    background-image: url(../../../images/rainbowBg2.jpg);
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.contact::before{
+    position: absolute;
+    content: "";
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgb(12, 11, 27);
+    opacity: .7;
+    z-index: -1;
+}
+
+.style-btn {
+    border: none;
+    background:#ff6600;
+    color:white;
+    padding: 15px;
+    font-weight: 600;
+    width: 150px;
+    transition: .25s all ease;
+}
+
+.style-btn:hover {
+    background-image: linear-gradient(75deg, #b7d319f1, #7aec0f);
+   
+}

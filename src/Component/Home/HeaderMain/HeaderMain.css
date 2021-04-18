@@ -1,0 +1,18 @@
+.btn-style {
+    border: none;
+    background:#ff6600;
+    color:white;
+    padding: 15px;
+    font-weight: 600;
+    transition: .25s all ease;
+}
+
+.btn-style:hover {
+    background-image: linear-gradient(75deg, #b7d319f1, #7aec0f);
+    border-radius: 20px;
+    border-color: transparent;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+
+

@@ -1,0 +1,19 @@
+.logo {
+    width: 60px;
+    height: 50px;
+}
+
+.background {
+    background: linear-gradient(to right, #ffff99 0%, #ff6600 100%);
+}
+
+.nav-link {
+    transition: .25s all ease-in-out;
+}
+
+.nav-link:hover {
+    background-color: #644733b0;
+    border-radius: 10px;
+    ;
+
+}

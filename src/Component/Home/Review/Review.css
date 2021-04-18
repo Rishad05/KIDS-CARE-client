@@ -1,0 +1,18 @@
+.review-container{
+    height:80vh;
+    background-image:url(../../../images/ReviewBg.jpg);
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.review-container::before{
+    position: absolute;
+    content: "";
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgb(12, 11, 27);
+    opacity: .6;
+    z-index: -1;
+}
