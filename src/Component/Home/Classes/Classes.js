@@ -6,7 +6,7 @@ import ClassDetails from '../ClassDetails/ClassDetails';
 const Classes = () => {
     const [classes, setClasses] = useState([])
     useEffect( () => {
-        fetch('http://localhost:5000/classes')
+        fetch('https://protected-waters-29079.herokuapp.com/classes')
         .then(res => res.json())
         .then(data => setClasses(data))
     }, [])

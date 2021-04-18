@@ -14,7 +14,7 @@ const ClassDetails = ({cls}) => {
             {
                 cls.image ? <img style={{height: '200px', width: '200px'}} className="img-animation" src={`data:image/jpeg;base64,${cls.image.img}`}alt=""/>
                 :
-                <img style={{height: '200px', width: '200px'}} className="img-fluid mb-3 img-animation" src={`http://localhost:5000/${cls.img}`} alt=""/>
+                <img style={{height: '200px', width: '200px'}} className="img-fluid mb-3 img-animation" src={`https://protected-waters-29079.herokuapp.com/${cls.img}`} alt=""/>
             }
             </div>
             <div style= {{backgroundColor:'#ffb380', color:'white'}} class="card-body fw-bolder">

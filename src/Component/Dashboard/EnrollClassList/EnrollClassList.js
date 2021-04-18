@@ -7,7 +7,7 @@ const EnrollClassList = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
     useEffect(() => {
-        fetch('http://localhost:5000/enrollClassList?email=' + loggedInUser.email)
+        fetch('https://protected-waters-29079.herokuapp.com/enrollClassList?email=' + loggedInUser.email)
             .then(res => res.json())
             .then(data => setEnrollClassList(data))
     }, [loggedInUser.email])
@@ -37,7 +37,7 @@ const EnrollClassList = () => {
                                              {
                                                 enrollClass.image ? <img  src={`data:image/jpeg;base64,${enrollClass.image.img}`}alt=""/>
                                                 :
-                                                <img  className="img-fluid mb-3" src={`http://localhost:5000/${enrollClass.img}`} alt=""/>        
+                                                <img  className="img-fluid mb-3" src={`https://protected-waters-29079.herokuapp.com/${enrollClass.img}`} alt=""/>        
                                              }
                                              
                                         </td>

@@ -5,14 +5,14 @@ const ClassOrderList = () => {
     const [order, setOrder] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/classOrderList')
+        fetch('https://protected-waters-29079.herokuapp.com/classOrderList')
             .then(res => res.json())
             .then(data => setOrder(data))
     }, [])
 
 
     const statusUpdated = () => {
-        fetch('http://localhost:5000/classOrderList')
+        fetch('https://protected-waters-29079.herokuapp.com/classOrderList')
             .then(res => res.json())
             .then(data => setOrder(data))
     }
@@ -23,7 +23,7 @@ const ClassOrderList = () => {
         const status = 'Pending'
         const user = { id, status };
 
-        const url = `http://localhost:5000/updateClassOrderList/${id}`;
+        const url = `https://protected-waters-29079.herokuapp.com/updateClassOrderList/${id}`;
         fetch(url, {
             method: 'PATCH',
             headers: {
@@ -46,7 +46,7 @@ const ClassOrderList = () => {
         const status = 'On going'
         const user = { id, status };
 
-        const url = `http://localhost:5000/updateClassOrderList/${id}`;
+        const url = `https://protected-waters-29079.herokuapp.com/updateClassOrderList/${id}`;
         fetch(url, {
             method: 'PATCH',
             headers: {
@@ -69,7 +69,7 @@ const ClassOrderList = () => {
         const status = 'Done'
         const user = { id, status };
 
-        const url = `http://localhost:5000/updateClassOrderList/${id}`;
+        const url = `https://protected-waters-29079.herokuapp.com/updateClassOrderList/${id}`;
         fetch(url, {
             method: 'PATCH',
             headers: {

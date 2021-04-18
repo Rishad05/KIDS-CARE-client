@@ -5,7 +5,7 @@ const ClassManage = () => {
     const [classes, setClasses] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/classes')
+        fetch('https://protected-waters-29079.herokuapp.com/classes')
             .then(res => res.json())
             .then(data => setClasses(data))
     }, [])
@@ -13,7 +13,7 @@ const ClassManage = () => {
 
     const handleDelete = (id) => {
 
-        fetch(`http://localhost:5000/deleteClasses/${id}`, {
+        fetch(`https://protected-waters-29079.herokuapp.com/deleteClasses/${id}`, {
             method : "DELETE"
         })
         .then(res => res.json())
@@ -25,7 +25,7 @@ const ClassManage = () => {
         })
     }
     const deleteClasses  = () =>{
-        fetch(`http://localhost:5000/classes`)
+        fetch(`https://protected-waters-29079.herokuapp.com/classes`)
         .then(res =>res.json())
         .then(data => setClasses(data))
        }
@@ -60,7 +60,7 @@ const ClassManage = () => {
                                                             {
                                                                 clas.image ? <img style={{ width: "8rem", height: "8rem" }} src={`data:image/png;base64,${clas.image.img}`} alt="" />
                                                                     :
-                                                                    <img style={{ width: "8rem", height: "8rem" }} className="img-fluid mb-3" src={`http://localhost:5000/${clas.img}`} alt="" />
+                                                                    <img style={{ width: "8rem", height: "8rem" }} className="img-fluid mb-3" src={`https://protected-waters-29079.herokuapp.com/${clas.img}`} alt="" />
                                                             }
                                                         </td>
                                                         <td className="w-25 btn-style">

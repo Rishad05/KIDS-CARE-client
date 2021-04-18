@@ -26,7 +26,7 @@ const AddClass = () => {
         formData.append('price', info.price)
 
 
-        fetch('http://localhost:5000/addClass', {
+        fetch('https://protected-waters-29079.herokuapp.com/addClass', {
             method: 'POST',
             body: formData
         })

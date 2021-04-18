@@ -14,7 +14,7 @@ const EnrollClass = () => {
    
     const { id } = useParams();
     useEffect(() => {
-        fetch(`http://localhost:5000/enrollClass/${id}`)
+        fetch(`https://protected-waters-29079.herokuapp.com/enrollClass/${id}`)
             .then(res => res.json())
             .then(data => setEnrollClass(data));
     }, [id])
@@ -27,7 +27,7 @@ const EnrollClass = () => {
              paymentId
             
              }
-             fetch('http://localhost:5000/enrollAllClass', {
+             fetch('https://protected-waters-29079.herokuapp.com/enrollAllClass', {
           method: 'POST',
           headers: {
             'content-type': 'application/json'

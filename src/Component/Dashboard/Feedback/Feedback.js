@@ -17,7 +17,7 @@ const Feedback = () => {
             name: loggedInUser.name,
             description: data.description
         }
-        fetch('http://localhost:5000/giveFeedback', {
+        fetch('https://protected-waters-29079.herokuapp.com/giveFeedback', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

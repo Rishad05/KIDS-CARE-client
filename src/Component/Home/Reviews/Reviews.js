@@ -9,7 +9,7 @@ import './Reviews.css';
 const Reviews = () => {
     const [feedback, setFeedback] = useState([])
     useEffect( () => {
-        fetch('http://localhost:5000/feedback')
+        fetch('https://protected-waters-29079.herokuapp.com/feedback')
         .then(res => res.json())
         .then(data => setFeedback(data))
     }, [])
